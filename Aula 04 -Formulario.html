@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="  " method="POST">
+                                                <!-- ^^^ Tag de criação de formulario, o action funciona para marcar para onde estamos enviando o arquivo
+                                                ^^^ Já o Methodo é o formato do "Verbo HTTP que sera utilizado ( GET DELETE PUT POST )" -->
+
+        <label for="campo_nome"> Email usurio</label>
+        <input type="email" name="nome-completo" id="campo_nome" placeholder="Email do usuario">
+
+        <input type="submit" value="enter"> <!-- Cria um botão para o envio do formulario -->
+
+        <label for="sexo">Selecione o Sexo</label>
+        <input type="radio" id="sexo" name="sexos" value="masculino">masculino
+        <input type="radio" id="sexo" name="sexos" value="masculino">Feminino
+    </form>
+
+    <fieldset id="">
+        <input type="checkbox" name="Cursos[]" id="Cursos">HTML
+        <input type="checkbox" name="Cursos[]" id="Cursos">CSS
+        <input type="checkbox" name="Cursos[]" id="Cursos">JavaScript
+
+        <select name="cidade" id="cidade-usuario">
+            <option value="suzano">suzano</option>
+            <option value="são-paulo">suzano</option>
+            <option value="guarulhos">suzano</option>
+        </select>
+    </fieldset>
+    <label for="Cursos"></label>
+
+</body>
+
+</html>
+
+<!-- label => defini um titulo ao campo do formulario, com o (for="") ele cria um vinculo com o name/id para direcionar o Usuario a ele. -->
+<!-- input type => define um tipo de imputação no tipo do dado (Senha, email, texto, etc..). -->
+<!-- nome => atribui um nome ao campo. -->
+<!-- value => atribui um valor ao campo. -->
+<!-- placeholder => atribui um texto dentro do formulario. -->
+<!-- fieldset => cria uma linha de separação entre os elementos -->
